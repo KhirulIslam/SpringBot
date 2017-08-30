@@ -19,7 +19,7 @@ public class SearchResult {
     }
 
     public String getTitle() {
-        return title;
+        return title.length() >= 80 ? title.substring(0, 80) : title;
     }
 
     public void setTitle(String title) {
@@ -35,7 +35,7 @@ public class SearchResult {
     }
 
     public String getSubtitle() {
-        return subtitle;
+        return subtitle.length() >= 80 ? subtitle.substring(0, 80) : subtitle;
     }
 
     public void setSubtitle(String subtitle) {
